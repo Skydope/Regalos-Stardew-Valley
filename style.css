@@ -46,9 +46,10 @@ a {
     display: none;
 }
 
-.parrafoRegalos{
+.p-alert{
     margin: 0 auto;
     text-align: center;
     font-weight: bold;
     width: 30ch;
 }
+

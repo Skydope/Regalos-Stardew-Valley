@@ -217,14 +217,26 @@ function cargarAldeanos(aldeanos) {
       <img class="aldeano" src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley">
       <h3 class="aldeano-name">${aldeano.Nombre}</h3>
       <p><i><img class="cake" src="./assets/svg/cake.svg" alt="Torta de cumpleaños"></i> ${aldeano.Cumpleaños}</p>
-      <p class="hide parrafoRegalos">Mejores regalos: ${aldeano.Regalos}</p>
+      <p class="hide parrafoRegalos">${aldeano.Regalos}</p>
     `;
     aldeanosDiv.append(div);
 
-    // Agregar un evento de clic al div
-    div.addEventListener("click", (event) => {
+     // Agregar un evento de clic al div
+     div.addEventListener("click", (event) => {
+      const aldeanoName = div.querySelector(".aldeano-name")
       const parrafoRegalos = div.querySelector(".parrafoRegalos");
-      parrafoRegalos.classList.toggle("hide");
+      
+      // Usar SweetAlert2 para mostrar un cuadro de diálogo con el contenido del párrafo
+      Swal.fire({
+        title: "Mejores regalos para " + aldeanoName.textContent,
+        html: `
+        <img src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley" style="max-width: 100%; height: auto;">
+        <p class="p-alert" >${parrafoRegalos.textContent}</p>
+      `,
+        confirmButtonText: "Aceptar",
+        confirmButtonColor: "#282828",
+        footer: '<b>© 2023 Augusto Natiello</b>'
+      });
     });
   });
 }
