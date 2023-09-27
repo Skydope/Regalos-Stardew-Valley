@@ -3,7 +3,7 @@ const aldeanos = [
     "Nombre": "Alex",
     "Cumpleaños": "Verano 13",
     "imagen": "./assets/png/aldeanos/Alex.png",
-    "Regalos": ["Banquete de sálmon", "Desayuno inglés"]
+    "Regalos": ["Banquete de salmón", "Desayuno inglés"]
   },
   {
     "Nombre": "Elliott",
@@ -206,7 +206,20 @@ const aldeanos = [
 ]
 
 const aldeanosDiv = document.querySelector("#aldeanosDiv")
+function agregarEnlacesAWiki(aldeanos) {
+  aldeanos.forEach((aldeano) => {
+    if (Array.isArray(aldeano.Regalos)) {
+      const regalosConEnlaces = aldeano.Regalos.map((regalo) => {
+        const regaloEnlace = `<a href="https://es.stardewvalleywiki.com/${encodeURIComponent(regalo)}" target="_blank">${regalo}</a>`;
+        return regaloEnlace;
+      });
+      aldeano.Regalos = regalosConEnlaces.join(', ');
+    }
+  });
+}
 
+// Llama a la función para agregar enlaces a la Wiki
+agregarEnlacesAWiki(aldeanos);
 function agregarEspacioDespuesDeComaARegalos(aldeanos) {
   aldeanos.forEach(aldeano => {
     if (Array.isArray(aldeano.Regalos)) {
@@ -214,6 +227,8 @@ function agregarEspacioDespuesDeComaARegalos(aldeanos) {
     }
   });
 }
+
+
 
 // Llama a la función para modificar la propiedad "Regalos" en cada objeto
 agregarEspacioDespuesDeComaARegalos(aldeanos);
@@ -240,7 +255,7 @@ function cargarAldeanos(aldeanos) {
         html: `
         <h2 class="h2-alert">Mejores regalos para ${aldeanoName.textContent}</h2>
         <img src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley" style="max-width: 100%; height: auto;">
-        <p class="p-alert" >${parrafoRegalos.textContent}</p>
+        <p class="p-alert">${parrafoRegalos.innerHTML}</p>
       `,
         confirmButtonText: "Aceptar",
         confirmButtonColor: "#282828",
@@ -250,6 +265,23 @@ function cargarAldeanos(aldeanos) {
   });
 }
 cargarAldeanos(aldeanos)
+
+// Crea enlaces de la wiki
+function agregarEnlacesAWiki(aldeanos) {
+  aldeanos.forEach((aldeano) => {
+    if (Array.isArray(aldeano.Regalos)) {
+      const regalosConEnlaces = aldeano.Regalos.map((regalo) => {
+        const regaloEnlace = `<a href="https://es.stardewvalleywiki.com/${encodeURIComponent(regalo)}" target="_blank">${regalo}</a>`;
+        return regaloEnlace;
+      });
+      aldeano.Regalos = regalosConEnlaces.join(', ');
+    }
+  });
+}
+
+
+agregarEnlacesAWiki(aldeanos);
+
 
 
 

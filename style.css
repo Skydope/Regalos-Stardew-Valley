@@ -21,7 +21,13 @@ ul {
 }
 
 a {
+    font-family: stardewFont;
     text-decoration: none;
+    color: #282828;
+}
+
+a:hover{
+    color: #c06f0d;
 }
 
 .title{
