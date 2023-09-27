@@ -171,7 +171,7 @@ const aldeanos = [
     "Nombre": "Rasmodius",
     "Cumpleaños": "Invierno 17",
     "imagen": "./assets/png/aldeanos/Rasmodius.png",
-    "Regalos": ["Escencia solar", "Escencia sombría", "Seta lila", "Superpepino"]
+    "Regalos": ["Esencia solar", "Esencia sombría", "Seta lila", "Superpepino"]
   },
   {
     "Nombre": "Robin",
