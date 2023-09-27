@@ -30,6 +30,18 @@ a:hover{
     color: #c06f0d;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+header a{
+    font-size: 2rem;
+    margin-left: 6rem;
+}
+
 .title{
     font-size: 4rem;
     font-family: stardewFont;
@@ -89,7 +101,14 @@ footer{
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    
+    header{
+        display: block;
+    }
+    header a{
+        margin: 0 auto;
+        width: 100%;
+        font-size: 2rem;
+    }
     .p-alert{
         width: 100%;
     }
