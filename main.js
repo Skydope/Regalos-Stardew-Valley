@@ -225,7 +225,7 @@ function cargarAldeanos(aldeanos) {
     div.innerHTML = `
       <img class="aldeano-img" src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley">
       <h3 class="aldeano-name">${aldeano.Nombre}</h3>
-      <p><i><img class="cake" src="./assets/svg/cake.svg" alt="Torta de cumpleaños"></i> ${aldeano.Cumpleaños}</p>
+      <p class="aldeano-cumpleaños"><i><img class="cake" src="./assets/svg/cake.svg" alt="Torta de cumpleaños"></i> ${aldeano.Cumpleaños}</p>
       <p class="hide parrafoRegalos">${aldeano.Regalos}</p>
     `;
     aldeanosDiv.append(div);
@@ -237,8 +237,8 @@ function cargarAldeanos(aldeanos) {
       
       // Usar SweetAlert2 para mostrar un cuadro de diálogo con el contenido del párrafo
       Swal.fire({
-        title: "Mejores regalos para " + aldeanoName.textContent,
         html: `
+        <h2 class="h2-alert">Mejores regalos para ${aldeanoName.textContent}</h2>
         <img src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley" style="max-width: 100%; height: auto;">
         <p class="p-alert" >${parrafoRegalos.textContent}</p>
       `,

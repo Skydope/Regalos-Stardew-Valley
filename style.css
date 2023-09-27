@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: stardewFont;
+    src: url(./assets/fonts/StardewValleyTextFont.otf);
+ }
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +25,12 @@ a {
 }
 
 .title{
+    font-size: 4rem;
+    font-family: stardewFont;
     text-align: center;
     margin-bottom: 1rem;
     padding-top: 1rem;
+    text-transform: uppercase;
 }
 
 .cake{
@@ -41,12 +49,24 @@ a {
     cursor: pointer;
     margin: .5rem;
 }
+.aldeano-name{
+    font-family: stardewFont;
+    font-size: 2rem;
+}
 
 .hide{
     display: none;
 }
-
+.h2-alert{
+    font-family: stardewFont;
+    font-size: 4rem;
+    color: black;
+    padding-bottom: 1rem;
+}
 .p-alert{
+    font-family: stardewFont;
+    color: black;
+    font-size: 2rem;
     margin: 0 auto;
     text-align: center;
     font-weight: bold;
@@ -54,20 +74,25 @@ a {
 footer{
     text-align: center;
 }
-
+.aldeano-cumpleaños{
+    font-weight: bold;
+}
 .p-footer{
     font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    
     .p-alert{
         width: 100%;
     }
     .title{
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 0;
         padding-top: 0;
+
     }
     .aldeanos{
         width: 100%;
