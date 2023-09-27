@@ -207,7 +207,16 @@ const aldeanos = [
 
 const aldeanosDiv = document.querySelector("#aldeanosDiv")
 
+function agregarEspacioDespuesDeComaARegalos(aldeanos) {
+  aldeanos.forEach(aldeano => {
+    if (Array.isArray(aldeano.Regalos)) {
+      aldeano.Regalos = aldeano.Regalos.join(', ');
+    }
+  });
+}
 
+// Llama a la función para modificar la propiedad "Regalos" en cada objeto
+agregarEspacioDespuesDeComaARegalos(aldeanos);
 
 function cargarAldeanos(aldeanos) {
   aldeanos.forEach((aldeano, index) => {
