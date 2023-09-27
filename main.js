@@ -171,7 +171,7 @@ const aldeanos = [
     "Nombre": "Rasmodius",
     "Cumpleaños": "Invierno 17",
     "imagen": "./assets/png/aldeanos/Rasmodius.png",
-    "Regalos": ["Escencia solar", "Escencia sombría", "Sera lila", "Superpepino"]
+    "Regalos": ["Escencia solar", "Escencia sombría", "Seta lila", "Superpepino"]
   },
   {
     "Nombre": "Robin",
@@ -214,7 +214,7 @@ function cargarAldeanos(aldeanos) {
     const div = document.createElement("div");
     div.classList.add("aldeano"); // Clase para el contenedor div
     div.innerHTML = `
-      <img class="aldeano" src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley">
+      <img class="aldeano-img" src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley">
       <h3 class="aldeano-name">${aldeano.Nombre}</h3>
       <p><i><img class="cake" src="./assets/svg/cake.svg" alt="Torta de cumpleaños"></i> ${aldeano.Cumpleaños}</p>
       <p class="hide parrafoRegalos">${aldeano.Regalos}</p>
