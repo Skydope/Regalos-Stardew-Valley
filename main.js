@@ -260,7 +260,7 @@ function cargarAldeanos(aldeanos) {
       `,
         confirmButtonText: "Aceptar",
         confirmButtonColor: "#282828",
-        footer: '<b>© 2023 Augusto Natiello</b>'
+        footer: '<p class="p-alert-footer">© 2023 Augusto Natiello</p>'
       });
     });
   });

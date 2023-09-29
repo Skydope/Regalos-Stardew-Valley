@@ -136,6 +136,11 @@ footer{
         margin-top: .5rem;
      }
   }
+  .p-alert-footer{
+    font-family: 'Rubik', sans-serif;
+    color: rgba(40, 40, 40, 0.63);
+    font-weight: bold;
+  }
 
 
   /* Tema Oscuro */
