@@ -217,6 +217,11 @@ footer{
 .donacion:hover{
   background-color: teal;
 }
+.theme-icon{
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
 
   
   @media only screen and (max-width: 768px) {
