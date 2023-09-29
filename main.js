@@ -218,6 +218,18 @@ function agregarEnlacesAWiki(aldeanos) {
   });
 }
 
+// function agregarEnlacesAWikiImagenes(aldeanos) {
+//   aldeanos.forEach((aldeano) => {
+//     if (Array.isArray(aldeano.imagen)) {
+//       const imagenesConEnlaces = aldeano.imagen.map((imagen) => {
+//         const imgEnlace = `<a href="https://es.stardewvalleywiki.com/${encodeURIComponent(regalo)}" target="_blank">${regalo}</a>`;
+//         return imgEnlace;
+//       });
+//       aldeano.imagen = imagenesConEnlaces.join(', ');
+//     }
+//   });
+// }
+
 // Llama a la función para agregar enlaces a la Wiki
 agregarEnlacesAWiki(aldeanos);
 function agregarEspacioDespuesDeComaARegalos(aldeanos) {
@@ -227,6 +239,8 @@ function agregarEspacioDespuesDeComaARegalos(aldeanos) {
     }
   });
 }
+
+
 
 
 
@@ -254,7 +268,7 @@ function cargarAldeanos(aldeanos) {
       Swal.fire({
         html: `
         <h2 class="h2-alert">Mejores regalos para ${aldeanoName.textContent}</h2>
-        <img src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley" style="max-width: 100%; height: auto;">
+        <a href="https://es.stardewvalleywiki.com/${aldeano.Nombre}" target="_blank"><img src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley" style="max-width: 100%; height: auto;"></a>
         <p class="p-alert">${parrafoRegalos.innerHTML}</p>
       `,
         confirmButtonText: "Aceptar",
