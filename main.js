@@ -217,20 +217,6 @@ function agregarEnlacesAWiki(aldeanos) {
     }
   });
 }
-
-// function agregarEnlacesAWikiImagenes(aldeanos) {
-//   aldeanos.forEach((aldeano) => {
-//     if (Array.isArray(aldeano.imagen)) {
-//       const imagenesConEnlaces = aldeano.imagen.map((imagen) => {
-//         const imgEnlace = `<a href="https://es.stardewvalleywiki.com/${encodeURIComponent(regalo)}" target="_blank">${regalo}</a>`;
-//         return imgEnlace;
-//       });
-//       aldeano.imagen = imagenesConEnlaces.join(', ');
-//     }
-//   });
-// }
-
-// Llama a la función para agregar enlaces a la Wiki
 agregarEnlacesAWiki(aldeanos);
 function agregarEspacioDespuesDeComaARegalos(aldeanos) {
   aldeanos.forEach(aldeano => {
@@ -266,6 +252,7 @@ function cargarAldeanos(aldeanos) {
       
       // Usar SweetAlert2 para mostrar un cuadro de diálogo con el contenido del párrafo
       Swal.fire({
+        background:'#00A5CF',
         html: `
         <h2 class="h2-alert">Mejores regalos para ${aldeanoName.textContent}</h2>
         <a href="https://es.stardewvalleywiki.com/${aldeano.Nombre}" target="_blank"><img src="${aldeano.imagen}" alt="${aldeano.Nombre} Stardew Valley" style="max-width: 100%; height: auto;"></a>
@@ -295,6 +282,24 @@ function agregarEnlacesAWiki(aldeanos) {
 
 
 agregarEnlacesAWiki(aldeanos);
+
+
+const themeButton = document.getElementById("themeButton");
+const body = document.body;
+
+themeButton.addEventListener("click", () => {
+  // Verifica si el body del documento tiene la clase "dark-theme"
+  if (body.classList.contains("dark-theme")) {
+    // Si tiene la clase "dark-theme", la elimina y agregamos "light-theme"
+    body.classList.remove("dark-theme");
+    body.classList.add("light-theme");
+  } else {
+    // Si no tiene la clase "dark-theme", la agrega y eliminamos "light-theme"
+    body.classList.remove("light-theme");
+    body.classList.add("dark-theme");
+  }
+});
+
 
 
 

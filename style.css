@@ -30,11 +30,15 @@ a:hover{
     color: #c06f0d;
 }
 
+h3:hover{
+    color: #c06f0d;
+}
+
 header{
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 header a{
@@ -125,7 +129,78 @@ footer{
         grid-template-columns: repeat(2,1fr);
         text-align: center;
      }
+
+     .themeButton{
+        margin: 0 auto;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+     }
   }
 
 
+  /* Tema Oscuro */
+.dark-theme {
+    background-color: #282828; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+  }
+  
+  .dark-theme h1 {
+    color: #ffffff; /* Negro para h1 */
+  }
+  
+  .dark-theme p,
+  .dark-theme h3,
+  .dark-theme a.donacion{
+    color: #ffffff; /* Blanco para p, h3 y a */
+  }
+  
+  /* Tema Claro */
+  .light-theme {
+    background-color: #ffffff; /* Fondo claro */
+    color: #282828; /* Texto oscuro */
+  }
+  
+  .light-theme h1 {
+    color: #282828; /* Blanco para h1 */
+  }
+  
+  .light-theme p,
+  .light-theme h3,
+  .light-theme .donacion{
+    color: #282828; /* Negro para p, h3 y a */
+  }
+  /* Botón tema */
+  .light-theme .themeButton{
+    border: 2px solid #282828;
+    color: #282828;
+  }
+  .dark-theme .themeButton{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  
+
+  /* Estilos para el botón */
+.themeButton {
+    display: block;
+    padding: 10px 20px;
+    background-color: #00A5CF; /* Color de fondo azul claro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    
+  }
+  
+  /* Cambiar el color de fondo al pasar el mouse sobre el botón */
+  .themeButton:hover {
+    background-color: #c06f0d; /* Color ligeramente más oscuro al pasar el mouse */
+  }
+  
+  /* Cambiar el color de fondo cuando el botón está activo (clic) */
+  .themeButton:active {
+    background-color: #282828; /* Color aún más oscuro cuando se hace clic */
+  }
   
