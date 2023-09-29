@@ -104,40 +104,7 @@ footer{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    header{
-        display: block;
-    }
-    header a{
-        margin: 0 auto;
-        width: 100%;
-        font-size: 2rem;
-    }
-    .p-alert{
-        width: 100%;
-    }
-    .title{
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 0;
-        padding-top: 0;
-        margin: 0 auto;
 
-    }
-    .aldeanos{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        text-align: center;
-     }
-
-     .themeButton{
-        margin: 0 auto;
-        margin-bottom: .5rem;
-        margin-top: .5rem;
-     }
-  }
   .p-alert-footer{
     font-family: 'Rubik', sans-serif;
     color: rgba(40, 40, 40, 0.63);
@@ -203,13 +170,47 @@ footer{
     
   }
   
-  /* Cambiar el color de fondo al pasar el mouse sobre el botón */
+
   .themeButton:hover {
-    background-color: #c06f0d; /* Color ligeramente más oscuro al pasar el mouse */
+    background-color: teal; 
   }
   
-  /* Cambiar el color de fondo cuando el botón está activo (clic) */
-  .themeButton:active {
-    background-color: #282828; /* Color aún más oscuro cuando se hace clic */
+  @media only screen and (max-width: 768px) {
+    /* Responsive: */
+    header{
+        display: block;
+    }
+    header a{
+        margin: 0 auto;
+        width: 100%;
+        font-size: 2rem;
+    }
+    .p-alert{
+        width: 100%;
+    }
+    .title{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 0;
+        margin: 0 auto;
+
+    }
+    .aldeanos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+     }
+
+     .themeButton{
+        margin: 0 auto;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+     }
+     .themeButton:hover {
+        background-color: transparent; 
+      }
   }
+  
   
