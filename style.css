@@ -180,24 +180,26 @@ footer{
   .light-theme .themeButton{
     border: 2px solid #282828;
     color: #282828;
+    background-color: #ffffff;
   }
   .dark-theme .themeButton{
     border: 2px solid #ffffff;
     color: #ffffff;
+    background-color: #282828;
   }
   
 
   /* Estilos para el botón */
 .themeButton {
     display: block;
+    background-color: #282828;
     padding: 10px 20px;
-    background-color: #00A5CF; /* Color de fondo azul claro */
-    color: #ffffff; /* Texto blanco */
+    color: #ffffff; 
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 15px; 
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    transition: background-color 0.3s ease; 
     
   }
   
