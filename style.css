@@ -200,6 +200,23 @@ footer{
     cursor: pointer;
     padding: 10px;
 }
+.donacion{
+  font-family: 'Rubik', sans-serif;
+  display: block;
+  background-color: gold;
+  padding: 10px 20px;
+  color: #282828;
+  font-weight: bold; 
+  border: none;
+  border-radius: 15px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.donacion:hover{
+  background-color: teal;
+}
 
   
   @media only screen and (max-width: 768px) {
@@ -209,7 +226,6 @@ footer{
     }
     header a{
         margin: 0 auto;
-        width: 100%;
         font-size: 2rem;
     }
     .p-alert{
@@ -238,18 +254,23 @@ footer{
      .themeButton:hover {
         background-color: transparent; 
       }
+      .donacion:hover{
+        background-color: transparent;
+      }
       .hamburger-menu {
         display: block;
     }
     .desktop{
       display: none;
     }
+    
   }
   .mobile-menu{
     display: none;
   }
   .mobile-menu.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 
