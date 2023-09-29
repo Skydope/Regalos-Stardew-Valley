@@ -294,12 +294,25 @@ function toggleTheme() {
   
     body.classList.remove("dark-theme");
     body.classList.add("light-theme");
+    // Guardar la preferencia del tema en localStorage
+    localStorage.setItem("theme", "light-theme");
   } else {
     
     body.classList.remove("light-theme");
     body.classList.add("dark-theme");
+    // Guardar la preferencia del tema en localStorage
+    localStorage.setItem("theme", "dark-theme");
   }
 }
+
+function loadThemePreference() {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    body.classList.add(savedTheme);
+  }
+}
+loadThemePreference()
+
 themeButtons.forEach((button) => {
   button.addEventListener("click", toggleTheme);
 });
