@@ -284,21 +284,26 @@ function agregarEnlacesAWiki(aldeanos) {
 agregarEnlacesAWiki(aldeanos);
 
 
-const themeButton = document.getElementById("themeButton");
+// Menu Hamburguesa
+const themeButtons = document.querySelectorAll(".themeButton");
 const body = document.body;
 
-themeButton.addEventListener("click", () => {
-  // Verifica si el body del documento tiene la clase "dark-theme"
+// Función para cambiar el tema
+function toggleTheme() {
   if (body.classList.contains("dark-theme")) {
-    // Si tiene la clase "dark-theme", la elimina y agregamos "light-theme"
+  
     body.classList.remove("dark-theme");
     body.classList.add("light-theme");
   } else {
-    // Si no tiene la clase "dark-theme", la agrega y eliminamos "light-theme"
+    
     body.classList.remove("light-theme");
     body.classList.add("dark-theme");
   }
+}
+themeButtons.forEach((button) => {
+  button.addEventListener("click", toggleTheme);
 });
+
 
 // hamburgerMenu
 const mobileMenu = document.querySelector('.mobile-menu');

@@ -241,6 +241,9 @@ footer{
       .hamburger-menu {
         display: block;
     }
+    .desktop{
+      display: none;
+    }
   }
   .mobile-menu{
     display: none;
