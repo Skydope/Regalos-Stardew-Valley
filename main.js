@@ -585,6 +585,7 @@ function changeLanguage() {
     titulo.innerHTML = `<h1 class="title">Mejores Regalos Stardew Valley</h1>`
     langIcons.forEach((icon) => {
       icon.src = "./assets/svg/spanish.svg";
+      icon.classList.add(".lang-icon")
     });
   } else {
     aldeanosDiv.innerHTML = `
@@ -598,6 +599,7 @@ function changeLanguage() {
   `;
   langIcons.forEach((icon) => {
     icon.src = "./assets/svg/english.svg";
+    icon.classList.add(".lang-icon")
   });
     
     titulo.innerHTML = `<h1 class="title">Best gifts on Stardew Valley</h1>`

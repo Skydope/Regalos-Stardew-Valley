@@ -269,6 +269,11 @@ footer{
     .desktop{
       display: none;
     }
+    .lang-icon{
+      width: 25px;
+      margin: 0;
+      padding: 0;
+    }
     
   }
   .mobile-menu{
