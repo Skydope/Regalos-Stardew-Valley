@@ -111,6 +111,15 @@ footer{
     font-weight: bold;
   }
 
+  
+/* Estilo de las barras del botón hamburguesa (líneas horizontales) */
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
 
   /* Tema Oscuro */
 .dark-theme {
@@ -154,6 +163,18 @@ footer{
     color: #ffffff;
     background-color: #282828;
   }
+
+  /* Menu Hamburguesa */
+  
+/* Estilo de las barras del botón hamburguesa (líneas horizontales) */
+.light-theme .bar {
+    background-color: #282828;
+}
+.dark-theme .bar {
+    background-color: #ffffff;
+   
+}
+
   
 
   /* Estilos para el botón */
@@ -174,6 +195,12 @@ footer{
   .themeButton:hover {
     background-color: teal; 
   }
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
   
   @media only screen and (max-width: 768px) {
     /* Responsive: */
@@ -211,6 +238,18 @@ footer{
      .themeButton:hover {
         background-color: transparent; 
       }
+      .hamburger-menu {
+        display: block;
+    }
   }
-  
-  
+  .mobile-menu{
+    display: none;
+  }
+  .mobile-menu.active {
+    display: block;
+}
+
+
+
+
+

@@ -300,6 +300,14 @@ themeButton.addEventListener("click", () => {
   }
 });
 
+// hamburgerMenu
+const mobileMenu = document.querySelector('.mobile-menu');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+hamburgerMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+});
+
 
 
 
