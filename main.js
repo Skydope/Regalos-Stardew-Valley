@@ -1,12 +1,23 @@
-async function cargarAldeanosDesdeJSON(language) {
-  const fileName = language === "es" ? "aldeanos-es.json" : "aldeanos-en.json";
-  const response = await fetch(fileName);
-  const data = await response.json();
-  return data;
+async function cargarAldeanosDesdeAPI(language) {
+  const URL_API_ES = "https://run.mocky.io/v3/77c47964-aebe-4973-aafb-d7d8eb346af0"
+  const URL_API_EN = "https://run.mocky.io/v3/3ce4efc0-7d76-48e8-a256-298f383f158a"
+  const apiUrl = language === "es" ? URL_API_ES : URL_API_EN; // Reemplaza con la URL de la API en el idioma correspondiente
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error("No se pudo obtener datos de la API");
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error al cargar aldeanos desde la API:", error);
+    throw error;
+  }
 }
+
 async function cargarAldeanosYCambiarIdioma(language) {
   try {
-    const aldeanos = await cargarAldeanosDesdeJSON(language);
+    const aldeanos = await cargarAldeanosDesdeAPI(language);
     cargarAldeanos(aldeanos);
   } catch (error) {
     console.error("Error al cargar aldeanos:", error);
@@ -38,7 +49,7 @@ function agregarEnlacesAWiki(regalos, language) {
       (regalo) =>
         `<a href="${baseUrl}${encodeURIComponent(
           regalo
-        )}" target="_blank">${regalo}</a>`
+        )}" target="_blank" rel="nofollow noopener noreferrer">${regalo}</a>`
     );
 
     return regalosEnlaces.join(", ");
@@ -86,7 +97,7 @@ function mostrarPopup(aldeano) {
     background: "#00A5CF",
     html: `
       <h2 class="h2-alert">${langPrefix} ${aldeanoName}</h2>
-      <a href="${langUrlPrefix}${aldeanoName}" target="_blank"><img src="${aldeano.imagen}" alt="${aldeanoName} Stardew Valley"></a>
+      <a href="${langUrlPrefix}${aldeanoName}" target="_blank" rel="nofollow noopener noreferrer"><img src="${aldeano.imagen}" alt="${aldeanoName} Stardew Valley"></a>
       <p class="p-alert">${parrafoRegalos}</p>
     `,
     confirmButtonText: alertBtn,
@@ -190,10 +201,14 @@ botonesIdioma.forEach((button) => {
   button.addEventListener("click", changeLanguage);
 });
 
-// Cargar aldeanos y aplicar cambios de idioma
-cargarAldeanosDesdeJSON(currentLanguage).then((aldeanos) => {
-  cargarAldeanos(aldeanos);
-});
+cargarAldeanosDesdeAPI(currentLanguage)
+  .then((aldeanos) => {
+    cargarAldeanos(aldeanos);
+  })
+  .catch((error) => {
+    // Manejar errores si la carga de la API falla
+    console.error("Error al cargar aldeanos:", error);
+  });
 
 // Llama a loadPreferences después de cargar aldeanos
 loadPreferences();
