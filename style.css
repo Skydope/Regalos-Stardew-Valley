@@ -34,6 +34,7 @@ h3:hover{
     color: #c06f0d;
 }
 
+
 header{
     display: flex;
     align-items: center;
@@ -219,9 +220,11 @@ footer{
 }
 .theme-icon,
 .lang-icon{
+  text-align: center;
   width: 25px;
   margin: 0;
   padding: 0;
+  margin-bottom: -7px;
 }
 
   
@@ -271,7 +274,6 @@ footer{
     }
     .lang-icon{
       width: 25px;
-      margin: 0;
       padding: 0;
     }
     

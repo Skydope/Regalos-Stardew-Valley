@@ -1,0 +1,206 @@
+[
+    {
+      "Nombre": "Alex",
+      "Cumpleaños": "Summer 13",
+      "imagen": "./assets/png/aldeanos/Alex.png",
+      "Regalos": "[Salmon Dinner, Full Breakfast]"
+    },
+    {
+      "Nombre": "Elliott",
+      "Cumpleaños": "Fall 5",
+      "imagen": "./assets/png/aldeanos/Elliott.png",
+      "Regalos": "[Pomegranate, Lobster, Duck Feather, Tom Kha Soup, Squid Ink, Crab Cakes]"
+    },
+    {
+      "Nombre": "Harvey",
+      "Cumpleaños": "Winter 14",
+      "imagen": "./assets/png/aldeanos/Harvey.png",
+      "Regalos": "[Truffle Oil, Coffee, Pickles, Super Meal, Wine]"
+    },
+    {
+      "Nombre": "Sam",
+      "Cumpleaños": "Summer 17",
+      "imagen": "./assets/png/aldeanos/Sam.png",
+      "Regalos": "[Maple Bar, Cactus Fruit, Tigerseye, Pizza]"
+    },
+    {
+      "Nombre": "Sebastian",
+      "Cumpleaños": "Winter 10",
+      "imagen": "./assets/png/aldeanos/Sebastian.png",
+      "Regalos": "[Void Egg, Frozen Tear, Obsidian, Sashimi, Pumpkin Soup]"
+    },
+    {
+      "Nombre": "Shane",
+      "Cumpleaños": "Spring 20",
+      "imagen": "./assets/png/aldeanos/Shane.png",
+      "Regalos": "[Pepper Poppers, Beer, Pepper, Pizza]"
+    },
+    {
+      "Nombre": "Abigail",
+      "Cumpleaños": "Fall 13",
+      "imagen": "./assets/png/aldeanos/Abigail.png",
+      "Regalos": "[Amethyst, Spicy Eel, Pumpkin, Chocolate Cake, Pufferfish, Banana Pudding, Blackberry Cobbler]"
+    },
+    {
+      "Nombre": "Emily",
+      "Cumpleaños": "Spring 27",
+      "imagen": "./assets/png/aldeanos/Emily.png",
+      "Regalos": "[Aquamarine, Amethyst, Emerald, Hamburger, Jade, Cloth, Ruby, Wool, Topaz]"
+    },
+    {
+      "Nombre": "Leah",
+      "Cumpleaños": "Winter 23",
+      "imagen": "./assets/png/aldeanos/Leah.png",
+      "Regalos": "[Salad, Vegetable Stew, Poppyseed Muffin, Goat Cheese, Stir Fry, Truffle, Wine]"
+    },
+    {
+      "Nombre": "Maru",
+      "Cumpleaños": "Summer 10",
+      "imagen": "./assets/png/aldeanos/Maru.png",
+      "Regalos": "[Pepper Poppers, Miner's Treat, Cauliflower, Grilled Cauliflower, Diamond, Strawberry, Iridium Bar, Gold Bar, Radioactive Bar, Battery Pack, Rhubarb Pie]"
+    },
+    {
+      "Nombre": "Penny",
+      "Cumpleaños": "Fall 2",
+      "imagen": "./assets/png/aldeanos/Penny.png",
+      "Regalos": "[Poppy, Roots Platter, Diamond, Emerald, Flounder, Melon, Poppyseed Muffin, Red Plate, Tom Kha Soup]"
+    },
+    {
+      "Nombre": "Caroline",
+      "Cumpleaños": "Winter 7",
+      "imagen": "./assets/png/aldeanos/Caroline.png",
+      "Regalos": "[Summer Spangle, Fish Taco, Green Tea, Tropical Curry]"
+    },
+    {
+      "Nombre": "Clint",
+      "Cumpleaños": "Winter 26",
+      "imagen": "./assets/png/aldeanos/Clint.png",
+      "Regalos": "[Amethyst, Aquamarine, Emerald, Jade, Iridium Bar, Gold Bar, Omni Geode, Ferngill Toast, Ruby, Artichoke Dip, Topaz]"
+    },
+    {
+      "Nombre": "Demetrius",
+      "Cumpleaños": "Summer 19",
+      "imagen": "./assets/png/aldeanos/Demetrius.png",
+      "Regalos": "[Rice Pudding, Bean Hotpot, Strawberry, Ice Cream]"
+    },
+    {
+      "Nombre": "Dwarf",
+      "Cumpleaños": "Summer 22",
+      "imagen": "./assets/png/aldeanos/Enano.png",
+      "Regalos": "[Aquamarine, Amethyst, Emerald, Jade, Lemon Stone, Omni Geode, Ruby, Topaz]"
+    },
+    {
+      "Nombre": "Evelyn",
+      "Cumpleaños": "Winter 20",
+      "imagen": "./assets/png/aldeanos/Evelyn.png",
+      "Regalos": "[Diamond, Chocolate Cake, Stuffing, Beet, Fairy Rose, Tulip]"
+    },
+    {
+      "Nombre": "George",
+      "Cumpleaños": "Fall 24",
+      "imagen": "./assets/png/aldeanos/George.png",
+      "Regalos": "[Leek, Fried Mushroom]"
+    },
+    {
+      "Nombre": "Gus",
+      "Cumpleaños": "Summer 8",
+      "imagen": "./assets/png/aldeanos/Gus.png",
+      "Regalos": "[Tropical Curry, Diamond, Escargot, Orange, Fish Taco]"
+    },
+    {
+      "Nombre": "Jas",
+      "Cumpleaños": "Summer 4",
+      "imagen": "./assets/png/aldeanos/Jas.png",
+      "Regalos": "[Pink Cake, Plum Pudding, Fairy Rose]"
+    },
+    {
+      "Nombre": "Jodi",
+      "Cumpleaños": "Fall 11",
+      "imagen": "./assets/png/aldeanos/Jodi.png",
+      "Regalos": "[Fried Eel, Eggplant Parmesan, Diamond, Vegetable Stew, Chocolate Cake, Crispy Bass, Rhubarb Pie, Pancakes]"
+    },
+    {
+      "Nombre": "Kent",
+      "Cumpleaños": "Spring 4",
+      "imagen": "./assets/png/aldeanos/Kent.png",
+      "Regalos": "[Roasted Hazelnuts, Ferngill Ferngill Toast]"
+    },
+    {
+      "Nombre": "Krobus",
+      "Cumpleaños": "Winter 1",
+      "imagen": "./assets/png/aldeanos/Krobus.png",
+      "Regalos": "[Pumpkin, Diamond, Void Egg, Iridium Bar, Void Mayo, Wild Horseradish]"
+    },
+    {
+      "Nombre": "Leo",
+      "Cumpleaños": "Summer 26",
+      "imagen": "./assets/png/aldeanos/Leo.png",
+      "Regalos": "[Ostrich Egg, Mango, Duck Feather, Poi]"
+    },
+    {
+      "Nombre": "Lewis",
+      "Cumpleaños": "Spring 7",
+      "imagen": "./assets/png/aldeanos/Lewis.png",
+      "Regalos": "[Governor's Shorts, Pepper, Glazed Yams, Vegetable Stew, Green Tea]"
+    },
+    {
+      "Nombre": "Linus",
+      "Cumpleaños": "Winter 3",
+      "imagen": "./assets/png/aldeanos/Linus.png",
+      "Regalos": "[Coconut, Prickly Pear, Yam, Ocean Stone, Blueberry Tart]"
+    },
+    {
+      "Nombre": "Marnie",
+      "Cumpleaños": "Fall 18",
+      "imagen": "./assets/png/aldeanos/Marnie.png",
+      "Regalos": "[Farmer's Lunch, Diamond, Pink Cake, Pumpkin Pie]"
+    },
+    {
+      "Nombre": "Pam",
+      "Cumpleaños": "Spring 18",
+      "imagen": "./assets/png/aldeanos/Pam.png",
+      "Regalos": "[Beer, Pale Ale, Parsnip, Mead, Prickly Pear, Glazed Yams, Piña Colada, Parsnip Soup]"
+    },
+    {
+      "Nombre": "Pierre",
+      "Cumpleaños": "Spring 26",
+      "imagen": "./assets/png/aldeanos/Pierre.png",
+      "Regalos": "[Fried Calamari]"
+    },
+    {
+      "Nombre": "Rasmodius",
+      "Cumpleaños": "Winter 17",
+      "imagen": "./assets/png/aldeanos/Rasmodius.png",
+      "Regalos": "[Solar Essence, Void Essence, Purple Mushroom, Super Cucumber]"
+    },
+    {
+      "Nombre": "Robin",
+      "Cumpleaños": "Fall 21",
+      "imagen": "./assets/png/aldeanos/Robin.png",
+      "Regalos": "[Spaghetti, Peach, Goat Cheese]"
+    },
+    {
+      "Nombre": "Sandy",
+      "Cumpleaños": "Fall 15",
+      "imagen": "./assets/png/aldeanos/Sandy.png",
+      "Regalos": "[Mango Sticky Rice, Saffron, Sweet Gem Berry, Daffodil]"
+    },
+    {
+      "Nombre": "Vincent",
+      "Cumpleaños": "Spring 10",
+      "imagen": "./assets/png/aldeanos/Vincent.png",
+      "Regalos": "[Snail, Sweet Pea, Pink Cake, Grape, Ginger Ale]"
+    },
+    {
+      "Nombre": "Willy",
+      "Cumpleaños": "Summer 24",
+      "imagen": "./assets/png/aldeanos/Willy.png",
+      "Regalos": "[Pumpkin, Diamond, Sturgeon, Mead, Iridium Bar, Sea Cucumber, Catfish, Octopus]"
+    },
+    {
+      "Nombre": "Haley",
+      "Cumpleaños": "Spring 14",
+      "imagen": "./assets/png/aldeanos/Haley.png",
+      "Regalos": "[Coconut, Sunflower, Fruit Salad, Pink Cake]"
+    }
+  ]
