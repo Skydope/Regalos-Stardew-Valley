@@ -133,8 +133,7 @@ footer{
   }
   
   .dark-theme p,
-  .dark-theme h3,
-  .dark-theme a.donacion{
+  .dark-theme h3{
     color: #ffffff; /* Blanco para p, h3 y a */
   }
   

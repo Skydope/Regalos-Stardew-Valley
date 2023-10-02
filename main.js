@@ -24,24 +24,28 @@ const langIcons = document.querySelectorAll(".lang-icon");
 const titulo = document.querySelector(".title");
 
 function agregarEnlacesAWiki(regalos, language) {
-  if (typeof regalos === 'string') {
-    const baseUrl = language === "es" ? "https://es.stardewvalleywiki.com/" : "https://stardewvalleywiki.com/";
-    
+  if (typeof regalos === "string") {
+    const baseUrl =
+      language === "es"
+        ? "https://es.stardewvalleywiki.com/"
+        : "https://stardewvalleywiki.com/";
+
     // Eliminar los corchetes "[" y "]" de la cadena y dividir los regalos en un arreglo
-    const regalosArray = regalos.replace(/^\[|\]$/g, '').split(', ');
+    const regalosArray = regalos.replace(/^\[|\]$/g, "").split(", ");
 
     // Crear enlaces para cada regalo en el arreglo
-    const regalosEnlaces = regalosArray.map((regalo) => (
-      `<a href="${baseUrl}${encodeURIComponent(regalo)}" target="_blank">${regalo}</a>`
-    ));
-    
+    const regalosEnlaces = regalosArray.map(
+      (regalo) =>
+        `<a href="${baseUrl}${encodeURIComponent(
+          regalo
+        )}" target="_blank">${regalo}</a>`
+    );
+
     return regalosEnlaces.join(", ");
   } else {
     return regalos;
   }
 }
-
-
 
 function cargarAldeanosHTML(aldeano) {
   return `
@@ -70,8 +74,12 @@ function mostrarPopup(aldeano) {
   const aldeanoName = aldeano.Nombre;
   const parrafoRegalos = agregarEnlacesAWiki(aldeano.Regalos, currentLanguage);
 
-  const langPrefix = currentLanguage === "es" ? "Mejores regalos para" : "Best gifts for";
-  const langUrlPrefix = currentLanguage === "es" ? "https://es.stardewvalleywiki.com/" : "https://stardewvalleywiki.com/";
+  const langPrefix =
+    currentLanguage === "es" ? "Mejores regalos para" : "Best gifts for";
+  const langUrlPrefix =
+    currentLanguage === "es"
+      ? "https://es.stardewvalleywiki.com/"
+      : "https://stardewvalleywiki.com/";
   const alertBtn = currentLanguage === "es" ? "Aceptar" : "Accept";
 
   Swal.fire({
@@ -91,10 +99,15 @@ function toggleTheme() {
   body.classList.toggle("dark-theme");
   body.classList.toggle("light-theme");
   themeIcons.forEach((icon) => {
-    icon.src = body.classList.contains("dark-theme") ? "./assets/svg/moon.svg" : "./assets/svg/sun.svg";
+    icon.src = body.classList.contains("dark-theme")
+      ? "./assets/svg/moon.svg"
+      : "./assets/svg/sun.svg";
   });
-  
-  localStorage.setItem("theme", body.classList.contains("dark-theme") ? "dark-theme" : "light-theme");
+
+  localStorage.setItem(
+    "theme",
+    body.classList.contains("dark-theme") ? "dark-theme" : "light-theme"
+  );
 }
 
 function loadPreferences() {
@@ -103,8 +116,14 @@ function loadPreferences() {
     body.classList.add(savedTheme);
   }
 
-  const tituloText = currentLanguage === "es" ? "Mejores Regalos Stardew Valley" : "Best gifts on Stardew Valley";
-  const langIconSrc = currentLanguage === "es" ? "./assets/svg/spanish.svg" : "./assets/svg/english.svg";
+  const tituloText =
+    currentLanguage === "es"
+      ? "Mejores Regalos Stardew Valley"
+      : "Best gifts on Stardew Valley";
+  const langIconSrc =
+    currentLanguage === "es"
+      ? "./assets/svg/spanish.svg"
+      : "./assets/svg/english.svg";
   const cumpleanosText = currentLanguage === "es" ? "Verano 3" : "Summer 3";
 
   aldeanosDiv.innerHTML = `
@@ -128,8 +147,14 @@ function changeLanguage() {
   currentLanguage = currentLanguage === "es" ? "en" : "es";
   localStorage.setItem("lang", currentLanguage);
 
-  const tituloText = currentLanguage === "es" ? "Mejores Regalos Stardew Valley" : "Best gifts on Stardew Valley";
-  const langIconSrc = currentLanguage === "es" ? "./assets/svg/spanish.svg" : "./assets/svg/english.svg";
+  const tituloText =
+    currentLanguage === "es"
+      ? "Mejores Regalos Stardew Valley"
+      : "Best gifts on Stardew Valley";
+  const langIconSrc =
+    currentLanguage === "es"
+      ? "./assets/svg/spanish.svg"
+      : "./assets/svg/english.svg";
   const cumpleanosText = currentLanguage === "es" ? "Verano 3" : "Summer 3";
 
   aldeanosDiv.innerHTML = `
@@ -148,9 +173,7 @@ function changeLanguage() {
 
   titulo.innerHTML = `<h1 class="title">${tituloText}`;
   // Llama a cargarAldeanosYCambiarIdioma
-cargarAldeanosYCambiarIdioma(currentLanguage);
-
-  
+  cargarAldeanosYCambiarIdioma(currentLanguage);
 }
 
 themeButtons.forEach((button) => {
