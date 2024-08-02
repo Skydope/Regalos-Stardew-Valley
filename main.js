@@ -1,6 +1,6 @@
 async function cargarAldeanosDesdeAPI(language) {
-  const URL_API_ES = "https://run.mocky.io/v3/d7e35e2e-ce69-4184-ab0d-551cb1280cc4"
-  const URL_API_EN = "https://run.mocky.io/v3/70dffc3d-2fef-42f8-b8a1-b0a6cda6d345"
+  const URL_API_ES = "https://run.mocky.io/v3/fa258fad-caf4-49fb-ae21-774cfd13b086"
+  const URL_API_EN = "https://run.mocky.io/v3/c30bf7ea-f238-4956-a634-4a8ca5d196b8"
   const apiUrl = language === "es" ? URL_API_ES : URL_API_EN; // Reemplaza con la URL de la API en el idioma correspondiente
   try {
     const response = await fetch(apiUrl);
